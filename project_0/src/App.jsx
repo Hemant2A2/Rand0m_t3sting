@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-      <Button>first button </Button>
+      <Button className="font-mono rounded-xl">
+      first button 
+      </Button>
     </>
   )
 }
