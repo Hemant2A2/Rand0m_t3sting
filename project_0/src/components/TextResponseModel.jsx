@@ -9,7 +9,7 @@ const genAI = new GoogleGenerativeAI(api_key);
 const TextResponseModel = async (prompt) => {
   const model = genAI.getGenerativeModel({ model: "gemini-pro"});
   const result = await model.generateContent(prompt);
-  const res = result.response;
+  const res = await result.response;
   const text = res.text();
   return text;
 }

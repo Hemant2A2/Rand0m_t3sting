@@ -11,8 +11,9 @@ function App() {
     setUserInput(event.target.value);
   };
 
-  const handleSubmit = () => {
-    console.log(TextResponseModel(userInput));
+  const handleSubmit = async () => {
+    const response = await TextResponseModel(userInput);
+    console.log(response);
   };
 
   return (
